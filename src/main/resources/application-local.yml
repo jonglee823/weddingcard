@@ -1,0 +1,25 @@
+spring:
+  # DB ?? ??
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/mywedding
+    username: mywedding
+    password: zcda9429!
+#    url: jdbc:mysql://127.0.0.1:3306/jh
+#    username: root
+#    password: tkfkd12dl!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # JPA ??
+  jpa:
+    hibernate:
+      ddl-auto: validate
+#      ddl-auto: create-drop
+    properties:
+      hibernate:
+        show_sql: true
+        formate_sql: true
+
+#log ??
+logging:
+  level:
+    org.hibernate.SQL: debug
